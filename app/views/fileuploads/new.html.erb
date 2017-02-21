@@ -1,0 +1,8 @@
+<h1>Fileuploads#new</h1>
+<p>Find me in app/views/fileuploads/new.html.erb</p>
+
+<%= form_tag '/fileuploads', method: 'post', multipart: true do %>
+  <label>File</label>
+  <%= file_field :fileupload, :file %>
+  <%= submit_tag 'Send file' %>
+<% end %>
